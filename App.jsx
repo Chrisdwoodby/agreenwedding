@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from "./Components/Main.jsx"
+import Main from "./client/Main.jsx"
 
 class App extends React.Component {
   constructor(props) {
