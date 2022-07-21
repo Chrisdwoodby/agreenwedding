@@ -3,6 +3,7 @@ import Navigation from "./Navigation.jsx";
 import About from "./About.jsx";
 import Home from "./Home.jsx";
 import Rsvp from "./Rsvp.jsx";
+import Footer from "./Footer.jsx";
 
 const Main = function(props) {
   const [renderHome, setHome] = useState(true);
@@ -22,6 +23,7 @@ const Main = function(props) {
     <div>
         <Navigation renderAuthentication={renderAuthentication} setHome={setHome} setRSVP={setRSVP} setAbout={setAbout}/>
        {renderAuthentication()}
+       <Footer/>
     </div>
   )
 }

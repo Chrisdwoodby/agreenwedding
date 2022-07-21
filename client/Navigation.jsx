@@ -1,9 +1,8 @@
 import React, {useState} from "react";
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
+import logo from '../media/Logo.png';
 
 const Navigation = function(props) {
     const renderRSVP = function() {
@@ -25,9 +24,11 @@ const Navigation = function(props) {
         props.renderAuthentication();
     }
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar id="nav-main" collapseOnSelect expand="lg">
       <Container>
-        <Navbar.Brand href="#home" onClick={renderHome}>React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home" onClick={renderHome}>
+          <img class="logo" src={logo}/>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

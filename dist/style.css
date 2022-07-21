@@ -1,0 +1,24 @@
+.banner {
+    background-color: #f7d1ba;
+    height: 500px;
+    width: 100%;
+}
+.logo {
+    height: 200px;
+    width: 200px;
+}
+#nav-main {
+    background-color: #d6ddd8;
+}
+.footer {
+    height: 400px;
+    width: 100%;
+    background-color: #d6ddd8;
+}
+.timeline .row {
+    display: flex;
+    justify-content: center;
+}
+.timeline .row {
+    text-align: center;
+}
