@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import background from '../media/background.png';
 import wedding from '../media/wedding.jpeg'
