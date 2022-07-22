@@ -1,5 +1,5 @@
 .banner {
-    background-color: #f7d1ba;
+    /* background-image: url('../media/wedding.jpeg'); */
     height: 500px;
     width: 100%;
 }
@@ -8,17 +8,45 @@
     width: 200px;
 }
 #nav-main {
-    background-color: #d6ddd8;
+    background-color: #f7d1ba;
 }
 .footer {
     height: 400px;
     width: 100%;
-    background-color: #d6ddd8;
+    background-color: #f7d1ba;
 }
 .timeline .row {
     display: flex;
     justify-content: center;
+    width: 60%;
+    overflow-x: scroll;
 }
-.timeline .row {
+.carousel-inner {
+    height: 400px;
+}
+.timeline .col {
     text-align: center;
+    background-color: #d7d7d7;
 }
+.rsvp-content {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #777;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.rsvp-content h1 {
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+.rsvp-content a {
+    padding: 15px 25px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
