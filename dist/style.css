@@ -3,6 +3,9 @@
     height: 500px;
     width: 100%;
 }
+.home h1 {
+    color: #fff;
+}
 .logo {
     height: 200px;
     width: 200px;
@@ -32,7 +35,7 @@
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    background-color: #777;
+    background-color: rgba(0,0,0,0.5);
     position: absolute;
     left: 50%;
     text-align: center;
@@ -49,4 +52,16 @@
     background-color: #fff;
     border-radius: 30px;
 }
-
+@media (max-width: 767px) {
+    #nav-main > div > button {
+        float: left !important;
+        position: absolute !important;
+    }
+    .logo {
+        height: 100px;
+        width: 100px;
+    }
+    .carousel-inner {
+        height: 100%;
+    }
+}

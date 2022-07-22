@@ -25,13 +25,14 @@ const Navigation = function(props) {
     }
   return (
     <Navbar id="nav-main" collapseOnSelect expand="lg">
-      <Container>
-        <Navbar.Brand href="#home" onClick={renderHome}>
+      <Container >
+        <Navbar.Brand className="mx-auto" href="#home" onClick={renderHome}>
           <img class="logo" src={logo}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
+            <Nav.Link href="#home" onClick={renderHome}>Home</Nav.Link>
             <Nav.Link href="#features" onClick={renderRSVP}>RSVP</Nav.Link>
             <Nav.Link href="#pricing" onClick={renderAbout}>About</Nav.Link>
           </Nav>
