@@ -12,7 +12,7 @@ const Main = function(props) {
 
   const renderAuthentication = function() {
     if (renderHome) {
-      return <Home/>
+      return <Home setRSVP={setRSVP}/>
     } else if (renderRSVP) {
       return <Rsvp/>
     } else if (renderAbout) {

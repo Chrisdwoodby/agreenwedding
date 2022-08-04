@@ -69,6 +69,7 @@
     #nav-main > div > button {
         float: left !important;
         position: absolute !important;
+        top: 50px;
     }
     .logo {
         height: 100px;
@@ -79,5 +80,7 @@
     }
     .carousel-caption {
         margin-top: 0px;
+        position: unset !important;
+        background-color: #d6ddd6;
     }
 }

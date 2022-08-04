@@ -9,7 +9,7 @@ const Home = function(props) {
         <div style={{backgroundImage: `url(${wedding})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}} class="banner">
           <div class="rsvp-content">
             <h1>RSVP Now</h1>
-            <a>Click Here</a>
+            <a onClick={props.setRSVP}>Click Here</a>
           </div>
         </div>
         <div class="timeline">
