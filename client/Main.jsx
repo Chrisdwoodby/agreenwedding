@@ -24,6 +24,7 @@ const Main = function(props) {
         <Navigation renderAuthentication={renderAuthentication} setHome={setHome} setRSVP={setRSVP} setAbout={setAbout}/>
        {renderAuthentication()}
        <Footer/>
+       <div class="subfooter">Designed and Built By CDW Studios 2022</div>
     </div>
   )
 }
