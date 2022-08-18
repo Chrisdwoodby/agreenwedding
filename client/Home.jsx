@@ -1,108 +1,61 @@
 import React, {useState} from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+// import Carousel from 'react-bootstrap/Carousel';
 import background from '../media/background.png';
-import wedding from '../media/wedding.jpeg'
+import banner from '../media/banner.jpeg'
+import bridal from '../media/bridal.jpeg'
+import out from '../media/out.jpeg'
+import Ceremony from '../media/Ceremony.jpeg'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Carousel from 'react-multi-carousel';
+import "react-multi-carousel/lib/styles.css";
 
 const Home = function(props) {
+    const renderRSVP = function() {
+        props.setHome(false);
+        props.setRSVP(true);
+        props.setAbout(false);
+        props.setFaqs(false);
+        props.renderAuthentication();
+    }; 
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+    };
     return (
       <div class="home">
-        <div style={{backgroundImage: `url(${wedding})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}} class="banner">
+        <div style={{backgroundImage: `url(${banner})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}} class="banner">
           <div class="rsvp-content">
             <h1>RSVP Now</h1>
-            <a onClick={props.setRSVP}>Click Here</a>
+            <a onClick={renderRSVP}>Click Here</a>
           </div>
         </div>
+        <div class="banner-spacer">
+          <h2>View the Wedding Schedule</h2>
+        </div>
         <div class="timeline">
-          <Carousel variant="dark">
-            <Carousel.Item>
-              <img
-              className="d-block w-100"
-              src={background}
-              alt="First slide"
-              />
-              <Carousel.Caption>
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-              className="d-block w-100"
-              src={background}
-              alt="Second slide"
-              />
-              <Carousel.Caption>
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={background}
-                alt="Third slide"
-              />
-              <Carousel.Caption>
-                <h5>Third slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={background}
-                alt="Third slide"
-              />
-              <Carousel.Caption>
-                <h5>4th slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={background}
-                alt="Third slide"
-              />
-              <Carousel.Caption>
-                <h5>5th slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={background}
-                alt="Third slide"
-              />
-              <Carousel.Caption>
-                <h5>6th slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={background}
-                alt="Third slide"
-              />
-              <Carousel.Caption>
-                <h5>7th slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={background}
-                alt="Third slide"
-              />
-              <Carousel.Caption>
-                <h5>8th slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
+          <Carousel responsive={responsive}>
+            <div class="item-1" style={{background: `url(${Ceremony})`}}>Item 1</div>
+            <div class="item-2" style={{background: `url(${Ceremony})`}}>Item 2</div>
+            <div class="item-3" style={{background: `url(${Ceremony})`}}>Item 3</div>
+            <div class="item-4" style={{background: `url(${Ceremony})`}}>Item 4</div>
+          </Carousel>;
         </div>
       </div>
     )

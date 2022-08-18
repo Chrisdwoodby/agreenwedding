@@ -8,37 +8,37 @@ const About = function(props) {
     <div>
       <Container id="about-container">
         <h1>The story of us</h1>
-        <Row>
-          <Col id="col-left" md={6}>we met like this at this place we met like this at this place
+        <Row id="a-row">
+          <Col id="col-left" md={6}><p>we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
-          we met like this at this place we met like this at this place</Col>
+          we met like this at this place we met like this at this place</p></Col>
           <Col id="col-right" md={6}><span>October 25th 2018</span></Col>
         </Row>
         <Row>
           <Col id="col-left" md={6}><span>October 25th 2018</span></Col>
-          <Col id="col-right" md={6}>we met like this at this place we met like this at this place
+          <Col id="col-right" md={6}><p>we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
-          we met like this at this place we met like this at this place</Col>
+          we met like this at this place we met like this at this place</p></Col>
         </Row>
-        <Row>
-          <Col id="col-left" md={6}>we met like this at this place we met like this at this place
+        <Row id="a-row">
+          <Col id="col-left" md={6}><p>we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
-          we met like this at this place we met like this at this place</Col>
+          we met like this at this place we met like this at this place</p></Col>
           <Col id="col-right" md={6}><span>October 25th 2018</span></Col>
         </Row>
         <Row>
           <Col id="col-left" md={6}><span>October 25th 2018</span></Col>
-          <Col id="col-right" md={6}>we met like this at this place we met like this at this place
+          <Col id="col-right" md={6}><p>we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
           we met like this at this place we met like this at this place
-          we met like this at this place we met like this at this place</Col>
+          we met like this at this place we met like this at this place</p></Col>
         </Row>
       </Container>
     </div>
