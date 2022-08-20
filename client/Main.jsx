@@ -27,8 +27,8 @@ const Main = function(props) {
     <div>
         <Navigation renderAuthentication={renderAuthentication} setHome={setHome} setRSVP={setRSVP} setAbout={setAbout} setFaqs={setFaqs}/>
        {renderAuthentication()}
-       <Footer/>
-       <div class="subfooter">Designed and Built By CDW Studios 2022</div>
+       <Footer renderAuthentication={renderAuthentication} setHome={setHome} setRSVP={setRSVP} setAbout={setAbout} setFaqs={setFaqs}/>
+       <div class="subfooter">Designed and Built By Chris Woodby</div>
     </div>
   )
 }
