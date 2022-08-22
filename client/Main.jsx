@@ -14,7 +14,7 @@ const Main = function(props) {
 
   const renderAuthentication = function() {
     if (renderHome) {
-      return <Home setHome={setHome} setRSVP={setRSVP} setAbout={setAbout} setFaqs={setFaqs}/>
+      return <Home renderHome={renderHome} setHome={setHome} setRSVP={setRSVP} setAbout={setAbout} setFaqs={setFaqs}/>
     } else if (renderRSVP) {
       return <Rsvp/>
     } else if (renderAbout) {
