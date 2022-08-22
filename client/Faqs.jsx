@@ -10,7 +10,7 @@ const Faqs = function(props) {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Where is the wedding?</Accordion.Header>
         <Accordion.Body>
-          Eagle Dancer Ranch in Boerne, Texas! 
+          Eagle Dancer Ranch located at 1621 Ranch Rd 473 Boerne, TX 78006
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
