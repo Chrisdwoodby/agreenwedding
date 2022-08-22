@@ -35,17 +35,26 @@ const Footer = function(props) {
     }
   return (
     <div class="footer">
-        <Row>
+        {/* <Row>
           <Col id="footer-nav">
             <Nav.Link href="#home" onClick={() => {renderHome(); handleClose()}}>Home</Nav.Link>
             <Nav.Link onClick={() => {renderRSVP(); handleClose()}}>RSVP</Nav.Link>
-          </Col>
-          <Col><img src={logo}/></Col>
-          <Col id="footer-nav">
             <Nav.Link onClick={() => {renderAbout(); handleClose()}}>Our Story</Nav.Link>
             <Nav.Link onClick={() => {renderFaqs(); handleClose()}}>FAQ's</Nav.Link> 
           </Col>
+          <Col><img src={logo}/></Col>
+          <Col id="footer-nav">
+
+          </Col>
+        </Row> */}
+        <Row id="nav-row">
+            <Nav.Link href="#home" onClick={() => {renderHome(); handleClose()}}>Home</Nav.Link>
+            <Nav.Link onClick={() => {renderRSVP(); handleClose()}}>RSVP</Nav.Link>
+            <Nav.Link onClick={() => {renderAbout(); handleClose()}}>Our Story</Nav.Link>
+            <Nav.Link onClick={() => {renderFaqs(); handleClose()}}>FAQ's</Nav.Link> 
+            <Nav.Link href="https://www.zola.com/registry/ryanandcorrie2022" target="_blank">Registry</Nav.Link>
         </Row>
+        <Row id="nav-row-img"><img src={logo}/></Row>
     </div>
   )
 }

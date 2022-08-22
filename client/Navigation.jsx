@@ -53,19 +53,20 @@ const Navigation = function(props) {
             <Nav.Link onClick={renderRSVP}>RSVP</Nav.Link>
             <Nav.Link onClick={renderAbout}>Our Story</Nav.Link>
             <Nav.Link onClick={renderFaqs}>FAQ's</Nav.Link>
+            <Nav.Link href="https://www.zola.com/registry/ryanandcorrie2022" target="_blank">Registry</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
     <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          {/* <Modal.Title></Modal.Title> */}
         </Modal.Header>
         <Modal.Body id="popup-menu">
         <Nav.Link href="#home" onClick={() => {renderHome(); handleClose()}}>Home</Nav.Link>
             <Nav.Link onClick={() => {renderRSVP(); handleClose()}}>RSVP</Nav.Link>
             <Nav.Link onClick={() => {renderAbout(); handleClose()}}>Our Story</Nav.Link>
             <Nav.Link onClick={() => {renderFaqs(); handleClose()}}>FAQ's</Nav.Link> 
+            <Nav.Link href="https://www.zola.com/registry/ryanandcorrie2022" target="_blank">Registry</Nav.Link>
         </Modal.Body>
         <Modal.Footer id="close-popup">
           <Button variant="secondary" onClick={handleClose}>
