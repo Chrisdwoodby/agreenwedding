@@ -1,5 +1,5 @@
 {
-  "name": "agreenwedding",
+  "name": "chrisandmeri",
   "version": "1.0.0",
   "description": "Wedding RSVP",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chrisdwoodby/agreenwedding.git"
+    "url": "git+https://github.com/Chrisdwoodby/chrisandmeri.git"
   },
   "author": "Chris Woodby",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Chrisdwoodby/agreenwedding/issues"
+    "url": "https://github.com/Chrisdwoodby/chrisandmeri/issues"
   },
-  "homepage": "https://github.com/Chrisdwoodby/agreenwedding#readme",
+  "homepage": "https://github.com/Chrisdwoodby/chrisandmeri#readme",
   "dependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-react": "^7.14.5",
